@@ -1,5 +1,5 @@
 with employees(id, name, email, phoneNumber, external_empcode) as (
-  values (1, 'Rahil', 'rahilrshk@gmail.com', '8779559106', '410377'),
-    (2, 'Sahil', 'sahilrshk@gmail.com', '9876543211', '98765'))
+  values (1, 'person1', 'person1@gmail.com', '9', '1'),
+    (2, 'person2', 'person2@gmail.com', '8', '2'))
 select *
 from employees;
