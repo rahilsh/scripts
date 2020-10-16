@@ -1,3 +1,3 @@
 # script
 
-Scripts that are handy during development
+Useful scripts for recurring tasks
