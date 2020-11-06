@@ -1,3 +1,3 @@
 # script
 
-Useful scripts for recurring tasks
+Collection of useful scripts for executing recurring tasks
