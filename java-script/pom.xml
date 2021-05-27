@@ -41,31 +41,31 @@
       <groupId>com.squareup.retrofit2</groupId>
       <version>2.5.0</version>
     </dependency>
+    
     <dependency>
       <artifactId>converter-gson</artifactId>
       <groupId>com.squareup.retrofit2</groupId>
       <version>2.5.0</version>
     </dependency>
 
-    <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
     <dependency>
-      <artifactId>guava</artifactId>
       <groupId>com.google.guava</groupId>
-      <version>29.0-jre</version>
+      <artifactId>guava</artifactId>
+      <version>[30.0-jre,)</version>
     </dependency>
-    <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+
     <dependency>
       <artifactId>commons-lang3</artifactId>
       <groupId>org.apache.commons</groupId>
       <version>3.9</version>
     </dependency>
-    <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-configuration2 -->
-    <!-- https://mvnrepository.com/artifact/commons-configuration/commons-configuration -->
+
     <dependency>
       <artifactId>commons-configuration</artifactId>
       <groupId>commons-configuration</groupId>
       <version>1.10</version>
     </dependency>
+    
     <dependency>
       <artifactId>junit</artifactId>
       <groupId>junit</groupId>
