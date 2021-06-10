@@ -1,3 +1,3 @@
 # script
 
-Scripts that are handy during development
+Collection of useful scripts to automate tasks
