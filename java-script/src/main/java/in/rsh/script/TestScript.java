@@ -1,4 +1,4 @@
-package in.rsh.script.common;
+package in.rsh.script;
 
 import static java.lang.System.exit;
 

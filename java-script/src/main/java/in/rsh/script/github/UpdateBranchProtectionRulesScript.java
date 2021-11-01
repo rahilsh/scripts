@@ -1,8 +1,8 @@
-package in.rsh.script.common.github;
+package in.rsh.script.github;
 
 import static java.lang.System.exit;
 
-import in.rsh.script.common.Main;
+import in.rsh.script.Main;
 
 public class UpdateBranchProtectionRulesScript {
 
