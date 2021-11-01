@@ -31,9 +31,9 @@ public class K8sScript {
 
       CoreV1Api api = new CoreV1Api();
       while (true) {
-        String podName = "scribe-lightning-shard-a-ljw74";
+        String podName = "pod-name";
         System.out.printf("Checking pod: %s%n", podName);
-        V1Pod v1Pod = api.readNamespacedPodStatus(podName, "rigel-clusters-prod", null);
+        V1Pod v1Pod = api.readNamespacedPodStatus(podName, "namespace", null);
         V1PodStatus status = v1Pod.getStatus();
         String phase = status.getPhase();
         System.out.printf("Pod in %s phase%n", phase);
@@ -64,7 +64,7 @@ public class K8sScript {
     Request request =
         new Request.Builder()
             .url(
-                "https://chat.googleapis.com/v1/spaces/AAAApPzIfDU/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=bVekREAtZVvc18y8smZSKyvEKhA1CCmzK7VsDOQ1EbI%3D")
+                "<incoming webhook url>")
             .method("POST", body)
             .addHeader("Content-Type", "application/json")
             .build();
@@ -79,7 +79,7 @@ public class K8sScript {
     CoreV1Api api = new CoreV1Api();
     V1PodList list =
         api.listNamespacedPod(
-            "rigel-clusters-prod", null, null, null, null, null, null, null, null, null);
+            "namespace", null, null, null, null, null, null, null, null, null);
     for (V1Pod item : list.getItems()) {
       System.out.println(item.getMetadata().getName());
     }
