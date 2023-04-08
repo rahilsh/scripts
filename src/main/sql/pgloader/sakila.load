@@ -1,0 +1,18 @@
+LOAD DATABASE
+    FROM mysql://root:root@localhost:3306/sakila
+    INTO postgres://rahil.r@localhost:5432/sakila
+    SET MySQL PARAMETERS
+        net_read_timeout  = '120',
+        net_write_timeout = '120'
+    WITH batch rows = 50000, batch concurrency = 10
+    CAST type datetime to timestamptz drop default drop not null using zero-dates-to-null,
+    type date drop not null drop default using zero-dates-to-null, type json to jsonb
+
+    INCLUDING ONLY TABLE NAMES MATCHING 'actor'
+
+    AFTER LOAD DO
+    $$ GRANT USAGE ON SCHEMA sakila TO sakila; $$,
+    $$ GRANT SELECT ON ALL TABLES IN SCHEMA sakila TO sakila; $$;
+
+
+
