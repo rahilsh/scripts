@@ -1,0 +1,22 @@
+README.md
+  s_29c1ac45b3b6d9::t_23970e2c871dc0 50-55
+  s_29c1ac45b3b6d9::t_57df659ce2a81c 62-77
+.github/CODEOWNERS
+  s_29c1ac45b3b6d9::t_05a937fc72ceef 1-9
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "c6f544beea56a770a34cac27e9cae0711d71050e",
+  "prompts": {},
+  "sessions": {
+    "s_29c1ac45b3b6d9": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0433773d0ffeuunSkF2FMY6e1B",
+        "model": "claude-opus-4.8"
+      },
+      "human_author": "Rahil Shaikh <rahilrshk@gmail.com>"
+    }
+  }
+}
