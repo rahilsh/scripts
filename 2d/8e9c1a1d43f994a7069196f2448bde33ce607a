@@ -1,0 +1,22 @@
+src/test/java/in/rsh/scripts/MainTest.java
+  s_29c1ac45b3b6d9::t_85ab50740b3887 1-24
+pom.xml
+  s_29c1ac45b3b6d9::t_358ed76172559c 73-79
+  s_29c1ac45b3b6d9::t_3b576dbce47ad3 60,62-64
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "2d8e9c1a1d43f994a7069196f2448bde33ce607a",
+  "prompts": {},
+  "sessions": {
+    "s_29c1ac45b3b6d9": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0433773d0ffeuunSkF2FMY6e1B",
+        "model": "claude-opus-4.8"
+      },
+      "human_author": "Rahil Shaikh <rahilrshk@gmail.com>"
+    }
+  }
+}
