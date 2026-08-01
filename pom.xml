@@ -26,7 +26,7 @@
       <plugin>
         <artifactId>maven-surefire-plugin</artifactId>
         <groupId>org.apache.maven.plugins</groupId>
-        <version>3.5.5</version>
+        <version>3.5.6</version>
       </plugin>
     </plugins>
     <resources>
