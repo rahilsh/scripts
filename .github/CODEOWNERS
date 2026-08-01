@@ -1,0 +1,9 @@
+# Code owners for this repository.
+# These owners are the default reviewers for all pull requests.
+# See: https://docs.github.com/en/repositories/managing-your-repos-settings-and-features/customizing-your-repository/about-code-owners
+
+* @rahilsh
+
+# Build & CI configuration
+/pom.xml            @rahilsh
+/.github/           @rahilsh

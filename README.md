@@ -47,26 +47,34 @@ Run one of the Java entry points, for example:
 mvn -q exec:java -Dexec.mainClass=in.rsh.scripts.TestScript
 ```
 
+Run the tests:
+
+```bash
+mvn -B test
+```
+
 > Most scripts are intended to be copied, tweaked for your environment, and run individually.
 > Read the source before running anything against real infrastructure.
 
 ## Repository layout
 
 ```
-src/main/
-├── java/in/rsh/scripts/     # Maven/Guice based Java utilities
-│   ├── Main.java            # Guice injector + Retrofit/config wiring
-│   ├── TestScript.java      # Minimal sample entry point
-│   └── kubernetes/          # Pod-watching / alerting helpers
-├── bash/                    # Standalone shell scripts
-│   ├── aws/                 # SQS DLQ tooling
-│   ├── git/                 # git subtree helper
-│   └── kafka/               # Kafka topic creation
-├── sql/                     # PostgreSQL / pgloader helpers
-│   ├── common/              # CSV → DB update helpers
-│   ├── postgres/            # Queries, grants, upserts
-│   └── pgloader/            # Migration load files
-└── resources/config/        # local.properties (see Configuration)
+src/
+├── main/
+│   ├── java/in/rsh/scripts/ # Maven/Guice based Java utilities
+│   │   ├── Main.java        # Guice injector + Retrofit/config wiring
+│   │   ├── TestScript.java  # Minimal sample entry point
+│   │   └── kubernetes/      # Pod-watching / alerting helpers
+│   ├── bash/                # Standalone shell scripts
+│   │   ├── aws/             # SQS DLQ tooling
+│   │   ├── git/             # git subtree helper
+│   │   └── kafka/           # Kafka topic creation
+│   ├── sql/                 # PostgreSQL / pgloader helpers
+│   │   ├── common/          # CSV → DB update helpers
+│   │   ├── postgres/        # Queries, grants, upserts
+│   │   └── pgloader/        # Migration load files
+│   └── resources/config/    # local.properties (see Configuration)
+└── test/java/in/rsh/scripts/ # JUnit 5 tests
 ```
 
 ## Scripts overview
